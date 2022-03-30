@@ -1,0 +1,9 @@
+{
+    "rootDir": ".",
+    "files": [
+        {
+            "name": "lol.js",
+            "defaultValue": "console.log('lol')"
+        }
+    ]
+}
