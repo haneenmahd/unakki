@@ -7,6 +7,9 @@
   "author": "Haneen Mahdin<haneenmahdin@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "dev": "node --es-module-specifier-resolution=node ."
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.23",
