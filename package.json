@@ -1,0 +1,13 @@
+{
+  "name": "unakki",
+  "version": "1.0.0",
+  "description": "Automate creating components and new files in your project. Organise it in a neat way.",
+  "main": "index.js",
+  "author": "Haneen Mahdin<haneenmahdin@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "typeinstall": "^2.1.0"
+  }
+}
