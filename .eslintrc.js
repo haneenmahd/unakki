@@ -11,6 +11,9 @@ export default {
   rules: {
     semi: ["error", "always"],
     quotes: ["error", "double"],
+    "no-undefined": ["error", "always"],
+    "no-var": ["error", "always"],
+    "prefer-destructuring": ["error", "always"]
   },
   extends: "eslint:recommended",
 };
