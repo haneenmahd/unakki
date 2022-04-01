@@ -23,7 +23,7 @@ class Component {
       fs.writeFileSync(formedPath, file.defaultValue, "utf-8");
 
       if (!checkFileExist(formedPath)) {
-        this.create(); // run it again to fix it, please prevent infinite loop here
+        this.init(); // run it again to fix it, please prevent infinite loop here
       }
     }
   }
