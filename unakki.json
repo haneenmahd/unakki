@@ -1,9 +1,20 @@
-{
-    "rootDir": ".",
-    "files": [
+[
+    {
+      "rootDir": ".",
+      "files": [
         {
-            "name": "lol.js",
-            "defaultValue": "console.log('lol')"
+          "name": "lol.js",
+          "defaultValue": "console.log('lol')"
         }
-    ]
-}
+      ]
+    },
+    {
+      "rootDir": ".",
+      "files": [
+        {
+          "name": "lmao.js",
+          "defaultValue": "console.log('lmao')"
+        }
+      ]
+    }
+]
