@@ -3,6 +3,6 @@ import Component from "./Component/Component";
 
 const config = Config.read(process.cwd());
 
-for (let componentConfig in config) {
-    new Component(Config.parse(componentConfig)).init();
+for (let componentConfig of Config.parse(config)) {
+  new Component(componentConfig).init();
 }
