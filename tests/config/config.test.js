@@ -1,5 +1,11 @@
 import Config from "../../src/Config/Config";
 
-it("Config is empty", () => {
-    expect(JSON.parse(Config.read("."))).toEqual({});
+it("Parse empty config", () => {
+    expect(Config.parse("{}")).toEqual({});
+});
+
+it("Read and parse config", () => {
+  expect(Config.read()).not.toBeUndefined();
+  
+  expect(Config.parse(Config.read()).length).toBeGreaterThan(0);
 });
