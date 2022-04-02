@@ -21,9 +21,9 @@ class Component {
     for (const file of files) {
       const formedPath = path.resolve(rootDir, file.name);
 
-      createDirRecursive(path.dirname(formedPath)); // create directories to make sure that the components can be created.
+      createDirRecursive(rootDir); // create directories to make sure that the components can be created.
 
-      if (!checkFileExist(formedPath)) fs.writeFileSync(formedPath, file.defaultValue, "utf-8");
+      fs.writeFileSync(formedPath, file.defaultValue, "utf-8");
 
       if (!checkFileExist(formedPath)) {
         this.init(); // run it again to fix it, please prevent infinite loop here
