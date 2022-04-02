@@ -19,7 +19,6 @@ class Unakki {
     const { config } = this;
 
     for (let componentConfig of config) {
-      console.log(componentConfig)
       new Component(componentConfig).init();
     }
 
