@@ -6,7 +6,7 @@ import { Component, Config } from "./index";
 class Unakki {
   /**
    *
-   * @param {import('./index').ComponentConfig} config
+   * @param {import('./Component/index').ComponentConfig[]} config
    */
   constructor(config = Config.parse(Config.read(process.cwd()))) {
     this.config = config;

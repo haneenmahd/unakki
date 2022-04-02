@@ -23,11 +23,7 @@ class Component {
 
       createDirRecursive(rootDir); // create directories to make sure that the components can be created.
 
-      fs.writeFileSync(formedPath, file.defaultValue, "utf-8");
-
-      if (!checkFileExist(formedPath)) {
-        this.init(); // run it again to fix it, please prevent infinite loop here
-      }
+      fs.writeFileSync(formedPath, file.defaultValue || "// File created by unakki", "utf-8");
     }
   }
 }
