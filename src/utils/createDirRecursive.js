@@ -1,6 +1,4 @@
 import fs from "fs";
-import path from "path";
-import checkFileExist from "./checkFileExist";
 
 /**
  * 
@@ -9,13 +7,7 @@ import checkFileExist from "./checkFileExist";
  * @returns {string}
  */
 export default function createDirRecursive(dirPath) {
-    return dirPath.split(path.sep).reduce((directories, directory) => {
-        directories += `${directory}/${path.sep}`;
-
-        if (!checkFileExist(directories)) {
-            fs.mkdirSync(directories);
-        }
-
-        return directories;
-    })
+    return fs.mkdirSync(dirPath, {
+        recursive: true
+    });
 }
