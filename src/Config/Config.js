@@ -20,7 +20,7 @@ class Config {
      * 
      * Turns the config into JSON format.
      * @param {string} config config read using the `Config.read()` function 
-     * @returns {JSON} config in json format
+     * @returns {object | Array} config in json format
      */
     static parse(config) {
         try {
