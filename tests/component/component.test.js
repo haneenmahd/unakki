@@ -5,8 +5,7 @@ it("Creates a new component", () => {
       rootDir: process.cwd(),
       files: [
           {
-              defaultValue: "nil",
-              name: "componentTest.txt"
+              name: "componentTest.js"
           }
       ]
   }).init()).toBeUndefined();
