@@ -2,7 +2,7 @@
   "name": "unakki",
   "version": "1.0.0",
   "description": "Automate creating components and new files in your project. Organise it in a neat way.",
-  "main": "src/index.js",
+  "main": "bin/unakki.js",
   "type": "module",
   "author": "Haneen Mahdin<haneenmahdin@gmail.com>",
   "license": "MIT",
