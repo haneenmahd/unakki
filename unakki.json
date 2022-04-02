@@ -1,6 +1,6 @@
 [
     {
-      "rootDir": "./lib/core",
+      "rootDir": "lib/core",
       "files": [
         {
           "name": "lol.js",
@@ -9,7 +9,7 @@
       ]
     },
     {
-      "rootDir": "./lib/components",
+      "rootDir": "lib/components",
       "files": [
         {
           "name": "lmao.js",
