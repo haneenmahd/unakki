@@ -1,6 +1,7 @@
 import path from "path";
 import fs from "fs";
 import checkFileExist from "../utils/checkFileExist";
+import createDirRecursive from "../utils/createDirRecursive";
 
 class Component {
   /**
@@ -19,6 +20,8 @@ class Component {
     
     for (const file of files) {
       const formedPath = path.resolve(rootDir, file.name);
+
+      createDirRecursive(path.dirname(formedPath)); // create directories to make sure that the components can be created.
 
       if (!checkFileExist(formedPath)) fs.writeFileSync(formedPath, file.defaultValue, "utf-8");
 
