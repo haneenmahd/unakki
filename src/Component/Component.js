@@ -20,7 +20,7 @@ class Component {
     for (const file of files) {
       const formedPath = path.resolve(rootDir, file.name);
 
-      fs.writeFileSync(formedPath, file.defaultValue, "utf-8");
+      if (!checkFileExist(formedPath)) fs.writeFileSync(formedPath, file.defaultValue, "utf-8");
 
       if (!checkFileExist(formedPath)) {
         this.init(); // run it again to fix it, please prevent infinite loop here
