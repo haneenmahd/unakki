@@ -1,6 +1,6 @@
 import path from "path";
 import fs from "fs";
-import checkFileExist from "../utils/checkFileExistence";
+import checkFileExist from "../utils/checkFileExist";
 
 class Component {
   /**
