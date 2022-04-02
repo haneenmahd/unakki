@@ -1,4 +1,5 @@
 export type ComponentConfig = {
+    name: string;
     rootDir: string;
     files: ComponentConfigFiles[];
 }

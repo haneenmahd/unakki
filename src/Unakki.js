@@ -27,16 +27,15 @@ class Unakki {
 
   /**
    * 
+   * Creates only the specific component passed in.
    * @param {string} componentName The component name to target
    * @returns 
    */
-  create(componentName) {
+  run(componentName) {
     const { config } = this;
 
-    for (let component in config) {
-      let currentConfig = config[component];
-
-      if (currentConfig[componentName] !== undefined) {
+    for (let currentConfig of config) {
+      if (currentConfig.name == componentName) {
         return new Component(currentConfig).init();
       }
     }
