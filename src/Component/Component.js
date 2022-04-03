@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
-import checkFileExist from "../utils/checkFileExist";
 import createDirRecursive from "../utils/createDirRecursive";
+import replaceNameWith from "../utils/replaceNameWith";
 
 class Component {
   /**
@@ -15,11 +15,11 @@ class Component {
   /**
    * Creates specific files required by each component and completes their tasks.
    */
-  init() {
+  init(argName) {
     const { rootDir, files } = this.config;
     
     for (const file of files) {
-      const formedPath = path.resolve(rootDir, file.name);
+      const formedPath = path.resolve(rootDir, replaceNameWith(file.name, argName));
 
       createDirRecursive(rootDir); // create directories to make sure that the components can be created.
 

@@ -9,12 +9,14 @@ const { bold: boldText, green: greenText, grey: greyText } = chalk;
 const args = process.argv;
 
 const unakki = new Unakki();
-const configArgs = args.slice(4);
 
-if (args.includes("create") && args.length == 4) {
+if (args.includes("create") && args.length >= 4) {
   let componentName = args[3];
+  let componentArgName = args[4] || "";
 
-  unakki.run(componentName);
+  console.log(componentArgName)
+
+  unakki.run(componentName, componentArgName);
 
   process.exit(0);
 } else if (args.length == 3) {
