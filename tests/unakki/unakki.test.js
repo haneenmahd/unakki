@@ -12,3 +12,19 @@ it("Create a new component set from a multiple component config", () => {
         }
     ]).init()).toEqual(true);
 })
+
+it("Create and run a new component with componentArgument passed in", () => {
+    expect(
+      new Unakki([
+        {
+          name: "test",
+          rootDir: "lib-tests/arg",
+          files: [
+            {
+              name: "<name>-componentArgTests.js",
+            },
+          ],
+        },
+      ]).run("test", "testArg")
+    ).toBeUndefined();
+})

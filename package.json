@@ -17,5 +17,8 @@
     "eslint": "^8.12.0",
     "jest": "^27.5.1",
     "typeinstall": "^2.1.0"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1"
   }
 }

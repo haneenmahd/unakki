@@ -31,12 +31,12 @@ class Unakki {
    * @param {string} componentName The component name to target
    * @returns 
    */
-  run(componentName) {
+  run(componentName, argName) {
     const { config } = this;
 
     for (let currentConfig of config) {
       if (currentConfig.name == componentName) {
-        return new Component(currentConfig).init();
+        return new Component(currentConfig).init(argName);
       }
     }
   }

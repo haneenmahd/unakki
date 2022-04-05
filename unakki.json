@@ -14,7 +14,7 @@
       "rootDir": "lib-tests/components",
       "files": [
         {
-          "name": "lmao.js",
+          "name": "<name>.lmao.js",
           "defaultValue": "console.log('lmao')"
         }
       ]
