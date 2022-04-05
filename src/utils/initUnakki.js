@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import inquirer from "inquirer";
+import getDocsInfo from "../utils/getDocsInfo";
 
 const initUnakki = async (configPath = process.cwd()) => {
     let questions = await inquirer.prompt([
@@ -35,6 +36,8 @@ const initUnakki = async (configPath = process.cwd()) => {
     });
 
     fs.writeFileSync(resolvedConfigPath, JSON.stringify(config));
+
+    getDocsInfo();
 }
 
 export default initUnakki;
