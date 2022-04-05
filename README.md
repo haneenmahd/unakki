@@ -13,7 +13,7 @@ unakki create <the-component-name>
 ## Why Unakki 🧐?
 When creating and maintaining a project at any scale, you will exhaust most of your time handling with the files, components or modules or in other words **Unakki** helps you in organising your code in a componentised-way.
 
-# Configuring
+# Configuring ⛓
 Configuring your project with unakki along with other config files can be very hard. So, We have build a simple `init` argument inside the 
 CLI to intialise the project with a single component.
 
@@ -42,7 +42,7 @@ file again and again. This is why we implemented a template string like structur
 Let's take a look at this in action:
 ```sh
 yarn dev create <component-name> <name-argument> # name-argument will be passed onto when creating the files.
-```.
+```
 
 So according to this function, you can re-use your files in this way of configuring it.
 ```
@@ -62,8 +62,8 @@ First of all, our config file is an array of components.
 	- **defaultValue**: The default value inside a specific file, by default we add a text "// File created by unakki" inside every 
 	  component.
 
-## Support
-We are very grateful, if you could support us by giving a star for this repo.
+## Support ❤️
+We are very grateful, if you could support us by giving a star for this repo ⭐️
 
-## License
+## License 📜
 This project `unakki` is licensed under the MIT license.
