@@ -62,8 +62,8 @@ First of all, our config file is an array of components.
 	- **defaultValue**: The default value inside a specific file, by default we add a text "// File created by unakki" inside every 
 	  component.
 
-## Support ❤️
+# Support ❤️
 We are very grateful, if you could support us by giving a star for this repo ⭐️
 
-## License 📜
+# License 📜
 This project `unakki` is licensed under the MIT license.
