@@ -13,6 +13,16 @@ unakki create <the-component-name>
 ## Why Unakki 🧐?
 When creating and maintaining a project at any scale, you will exhaust most of your time handling with the files, components or modules or in other words **Unakki** helps you in organising your code in a componentised-way.
 
+## Installing
+You can use either npm or yarn to install the package.
+```sh
+yarn add -D unakki
+
+# or
+
+npm i -D unakki
+```
+
 # Configuring ⛓
 Configuring your project with unakki along with other config files can be very hard. So, We have build a simple `init` argument inside the 
 CLI to intialise the project with a single component.
