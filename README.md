@@ -12,3 +12,24 @@ unakki create <the-component-name>
 
 ## Why Unakki 🧐?
 When creating and maintaining a project at any scale, you will exhaust most of your time handling with the files, components or modules or in other words **Unakki** helps you in organising your code in a componentised-way.
+
+# Configuring
+Configuring your project with unakki along with other config files can be very hard. So, We have build a simple `init` argument inside the 
+CLI to intialise the project with a single component.
+
+You can initialise your project with this command:
+```sh
+unakki init
+```.
+
+After running this command you will need to answer some questions in-order to configure the project.
+```sh
+
+Name your component: The name of the component you need to re-use, this can be very simple like "util", "view", "ui", "core" etc.
+
+Root Directory: The root directory where the components will exist, this was meant to create because we don't need to use absolute path for 
+files every time. This property make that part simple.
+
+Files: The files you want when you are actually creating a new component. You can add more files by seperating them with a gap like this " 
+". This property will pass on the argument <name>, which is passed on from the CLI at the runtime of this component.
+```
