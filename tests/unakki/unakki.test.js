@@ -26,5 +26,5 @@ it("Create and run a new component with componentArgument passed in", () => {
           ],
         },
       ]).run("test", "testArg")
-    ).toEqual(true);
+    ).toBeUndefined();
 })

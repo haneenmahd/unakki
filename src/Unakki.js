@@ -39,8 +39,6 @@ class Unakki {
         return new Component(currentConfig).init(argName);
       }
     }
-
-    return true;
   }
 }
 
