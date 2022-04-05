@@ -20,7 +20,8 @@ CLI to intialise the project with a single component.
 You can initialise your project with this command:
 ```sh
 unakki init
-```.
+```
+
 
 After running this command you will need to answer some questions in-order to configure the project.
 
