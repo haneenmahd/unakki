@@ -1,12 +1,13 @@
 {
   "name": "unakki",
-  "version": "1.0.0",
-  "description": "Automate creating components and new files in your project. Organise it in a neat way.",
+  "version": "1.0.0-beta",
+  "description": "Boost your productivity by simplifying the process of organising your project ⚡️",
   "main": "bin/unakki.js",
   "type": "module",
   "author": "Haneen Mahdin<haneenmahdin@gmail.com>",
   "license": "MIT",
   "private": false,
+  "bin": "bin/unakki.js",
   "scripts": {
     "dev": "node --es-module-specifier-resolution=node .",
     "test": "yarn node --experimental-vm-modules $(yarn bin jest)"
@@ -21,5 +22,13 @@
   "dependencies": {
     "chalk": "^5.0.1",
     "inquirer": "^8.2.2"
-  }
+  },
+  "keywords": [
+    "productivity",
+    "organise",
+    "nodejs",
+    "projects",
+    "tools",
+    "developer"
+  ]
 }
