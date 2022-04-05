@@ -3,23 +3,29 @@
 import { Unakki } from "../src/index";
 import getAvailableComponents from "../src/utils/getAvailableComponents";
 import chalk from "chalk";
+import initUnakki from "../src/utils/initUnakki";
 
 const { bold: boldText, green: greenText, grey: greyText } = chalk;
 
 const args = process.argv;
 
-const unakki = new Unakki();
+if (args.includes("init")) {
 
-if (args.includes("create") && args.length >= 4) {
+  initUnakki(args[3]);
+  // Initialises unakki 🚀
+
+} else if (args.includes("create") && args.length >= 4) {
+
+  const unakki = new Unakki();
   let componentName = args[3];
   let componentArgName = args[4] || "";
-
-  console.log(componentArgName)
 
   unakki.run(componentName, componentArgName);
 
   process.exit(0);
-} else if (args.length == 3) {
+
+} else if (!args.includes("create") && args.length == 3) {
+
   const availableComponents = getAvailableComponents();
 
   availableComponents.map(component => {
@@ -33,8 +39,13 @@ if (args.includes("create") && args.length >= 4) {
   });
 
   process.exit(0);
+
 } else {
+
+  const unakki = new Unakki();
+
   unakki.init();
 
   process.exit(0);
+
 }
