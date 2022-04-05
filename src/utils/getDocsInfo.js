@@ -3,6 +3,6 @@
  */
 export default function getDocsInfo() {
     console.log(`
-🔦 Find more documentation about configuring in our GitHub repository: https://github.com/haneenmahd/unakki#configuring.
+🔦 Find more documentation about configuring in our GitHub repository: https://github.com/haneenmahd/unakki#configuring-.
     `);
 }
