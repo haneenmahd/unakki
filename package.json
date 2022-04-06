@@ -2,16 +2,17 @@
   "name": "unakki",
   "version": "1.0.1",
   "description": "Boost your productivity by simplifying the process of organising your project ⚡️",
-  "main": "dist/unakki.js",
-  "type": "commonjs",
+  "main": "dist/unakki.cjs",
+  "type": "module",
   "author": "Haneen Mahdin<haneenmahdin@gmail.com>",
   "license": "MIT",
   "private": false,
-  "bin": "dist/unakki.js",
+  "bin": "dist/unakki.cjs",
   "scripts": {
-    "build": "esbuild bin/unakki.js --platform=node --bundle --outfile=dist/unakki.js",
+    "build": "esbuild bin/unakki.js --platform=node --bundle --outfile=dist/unakki.cjs",
     "dev": "node --es-module-specifier-resolution=node .",
-    "test": "yarn node --experimental-vm-modules $(yarn bin jest)"
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
@@ -19,7 +20,8 @@
     "esbuild": "^0.14.32",
     "eslint": "^8.12.0",
     "jest": "^27.5.1",
-    "typeinstall": "^2.1.0"
+    "typeinstall": "^2.1.0",
+    "husky": "^7.0.0"
   },
   "dependencies": {
     "inquirer": "^8.2.2"
