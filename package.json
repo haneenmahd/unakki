@@ -1,6 +1,6 @@
 {
   "name": "unakki",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Boost your productivity by simplifying the process of organising your project ⚡️",
   "main": "dist/unakki.cjs",
   "type": "module",
