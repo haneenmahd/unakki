@@ -1,5 +1,7 @@
 # unakki 🤺
-[![CI 🤺](https://github.com/haneenmahd/unakki/actions/workflows/node.js.yml/badge.svg)](https://github.com/haneenmahd/unakki/actions/workflows/node.js.yml)
+[![Build 👷🏻‍♀️](https://github.com/haneenmahd/unakki/actions/workflows/build.yml/badge.svg)](https://github.com/haneenmahd/unakki/actions/workflows/build.yml)
+
+[![Test 🧪](https://github.com/haneenmahd/unakki/actions/workflows/test.yml/badge.svg)](https://github.com/haneenmahd/unakki/actions/workflows/test.yml)
 
 Automate the process of creating re-usable components and modules 😵.
 Have you ever been exhausted and tired of creating the components and new modules in your javascript project. And then I'm pretty sure that you are on the who should defenitely try out **Unakki 🤺**.
