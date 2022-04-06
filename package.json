@@ -1,6 +1,6 @@
 {
   "name": "unakki",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "Boost your productivity by simplifying the process of organising your project ⚡️",
   "main": "bin/unakki.js",
   "type": "module",
