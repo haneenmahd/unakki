@@ -7,7 +7,7 @@
   "author": "Haneen Mahdin<haneenmahdin@gmail.com>",
   "license": "MIT",
   "private": false,
-  "bin": "bin/unakki.js",
+  "bin": "--es-module-specifier-resolution=node bin/unakki.js",
   "scripts": {
     "dev": "node --es-module-specifier-resolution=node .",
     "test": "yarn node --experimental-vm-modules $(yarn bin jest)"
