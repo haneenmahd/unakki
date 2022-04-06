@@ -2,10 +2,7 @@
 
 import { Unakki } from "../src/index";
 import getAvailableComponents from "../src/utils/getAvailableComponents";
-import chalk from "chalk";
 import initUnakki from "../src/utils/initUnakki";
-
-const { bold: boldText, green: greenText, grey: greyText } = chalk;
 
 const args = process.argv;
 
@@ -30,11 +27,9 @@ if (args.includes("init")) {
 
   availableComponents.map(component => {
     console.log(
-      `${boldText(component.name)}: Creates ${greenText(
-        component.files.length
-      )} ${
+      `${component.name}: Creates ${component.files.length} ${
         component.files.length === 1 ? "component" : "components"
-      } in the ${greyText(component.rootDir)} folder.`
+      } in the ${component.rootDir} folder.`
     );
   });
 
