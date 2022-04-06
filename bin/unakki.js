@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
 import { Unakki } from "../src/index";
 import getAvailableComponents from "../src/utils/getAvailableComponents";
