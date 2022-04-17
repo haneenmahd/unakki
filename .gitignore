@@ -3,3 +3,5 @@ dist
 build
 cache
 lib-tests/
+
+*.DS_Store

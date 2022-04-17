@@ -4,5 +4,5 @@
  * @param {string} value the value to be set 
  */
 export default function replaceNameWith(str, value) {
-    return str.replace(/\<name\>/, value);
+    return str.replace(/\<name\>/gi, value);
 }

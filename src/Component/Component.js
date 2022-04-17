@@ -2,6 +2,7 @@ import path from "path";
 import fs from "fs";
 import createDirRecursive from "../utils/createDirRecursive";
 import replaceNameWith from "../utils/replaceNameWith";
+import { replace } from "feather-icons";
 
 class Component {
   /**
@@ -19,11 +20,19 @@ class Component {
     const { rootDir, files } = this.config;
     
     for (const file of files) {
-      const formedPath = path.resolve(rootDir, replaceNameWith(file.name, argName));
+      const filePath = replaceNameWith(path.resolve(rootDir, file.name), argName);
 
       createDirRecursive(rootDir); // create directories to make sure that the components can be created.
 
-      fs.writeFileSync(formedPath, file.defaultValue || "// File created by unakki", "utf-8");
+      // create any subdirectories
+      if (path.dirname(file.name)) {
+        let subDirname = replaceNameWith(path.dirname(file.name), argName);
+        let subDirectory = path.resolve(rootDir, subDirname);
+
+        fs.existsSync(subDirectory) || fs.mkdirSync(subDirectory);
+      }
+
+      fs.writeFileSync(filePath, file.defaultValue || "// File created by unakki", "utf-8");
     }
   }
 }
