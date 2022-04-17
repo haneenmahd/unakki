@@ -1,1 +1,7 @@
-[{"name":"util","rootDir":"./src/utils","files":[{"name":"<name>.js"}]}]
+[
+  {
+    "name": "util",
+    "rootDir": "./src/utils",
+    "files": [{ "name": "<name>/<name>.js" }]
+  }
+]
