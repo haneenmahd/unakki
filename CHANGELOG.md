@@ -1,3 +1,8 @@
+# v1.0.3
+* Fix creating subdirectories by @haneenmahd
+
+**Full Changelog**: https://github.com/haneenmahd/unakki/compare/v1.0.2...v1.0.3
+
 # v1.0.2
 * Fix Module Not Found by @haneenmahd in https://github.com/haneenmahd/unakki/pull/6.
 
