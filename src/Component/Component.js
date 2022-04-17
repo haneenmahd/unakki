@@ -2,7 +2,6 @@ import path from "path";
 import fs from "fs";
 import createDirRecursive from "../utils/createDirRecursive";
 import replaceNameWith from "../utils/replaceNameWith";
-import { replace } from "feather-icons";
 
 class Component {
   /**
