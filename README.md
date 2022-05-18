@@ -53,7 +53,7 @@ file again and again. This is why we implemented a template string like structur
 
 Let's take a look at this in action:
 ```sh
-yarn dev create <component-name> <name-argument> # name-argument will be passed onto when creating the files.
+unakki dev create <component-name> <name-argument> # name-argument will be passed onto when creating the files.
 ```
 
 So according to this function, you can re-use your files in this way of configuring it.
